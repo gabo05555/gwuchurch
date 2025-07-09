@@ -26,7 +26,6 @@ export default function Navbar() {
         <li>Home</li>
         <li>About</li>
         <li>Ministries</li>
-        <li>Connect</li>
         <li>Events</li>
         <li>Give</li>
       </ul>
