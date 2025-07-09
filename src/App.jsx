@@ -16,8 +16,8 @@ function App() {
         />
         <div className="landing-hero__overlay" />
         <div className="landing-hero__content">
-          <h1 className="landing-hero__title">Building Legacies of Faith.</h1>
-          <p className="landing-hero__subtitle">Welcome to Legacy Hills Church</p>
+          <h1 className="landing-hero__title">Let's Worship Together.</h1>
+          <p className="landing-hero__subtitle">Welcome to God With Us Church</p>
           <div className="landing-hero__actions">
             <button className="landing-hero__btn">Plan A Visit</button>
             <button className="landing-hero__btn secondary">Get Connected →</button>
