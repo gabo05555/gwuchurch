@@ -1,10 +1,11 @@
 import './styles/Navbar.css';
+import gwuLogo from './assets/gwuLogo.jpg';
 
 export default function Navbar() {
   return (
     <nav className="navbar">
-      <div className="navbar__logo">{/* Replace with your SVG or image if needed */}
-        <span className="navbar__logo-circle">LH</span>
+      <div className="navbar__logo">
+        <img src={gwuLogo} alt="GWU Logo" className="navbar__logo-img" />
       </div>
       <ul className="navbar__menu">
         <li>Home</li>

@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background: #222;
+  background: linear-gradient(120deg, #0a1a2f 0%, #2e4a62 100%);
 }
 
 .landing-hero__bg {
@@ -18,7 +18,7 @@
   height: 100%;
   object-fit: cover;
   z-index: 1;
-  filter: brightness(0.6);
+  filter: brightness(0.5) grayscale(0.2) contrast(1.1);
 }
 
 .landing-hero__overlay {
@@ -27,7 +27,7 @@
   left: 0;
   width: 100vw;
   height: 100%;
-  background: linear-gradient(180deg, rgba(0,0,0,0.5) 60%, rgba(0,0,0,0.2) 100%);
+  background: linear-gradient(180deg, rgba(10,26,47,0.7) 60%, rgba(46,74,98,0.3) 100%);
   z-index: 2;
 }
 
@@ -41,20 +41,25 @@
   color: #fff;
   text-align: center;
   width: 100vw;
-  padding-top: 6rem;
+  padding-top: 7rem;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
 }
 
 .landing-hero__title {
   font-size: 3.2rem;
-  font-weight: 800;
+  font-weight: 900;
   margin: 0;
   letter-spacing: -1px;
+  color: #e6e9f0;
+  text-shadow: 0 4px 24px #0a1a2f99;
 }
 
 .landing-hero__subtitle {
   font-size: 1.5rem;
   margin: 1.2rem 0 2rem 0;
   font-weight: 400;
+  color: #b6c47a;
+  letter-spacing: 0.5px;
 }
 
 .landing-hero__actions {
@@ -70,18 +75,20 @@
   font-weight: 700;
   border: none;
   cursor: pointer;
-  background: #7a8c4d;
-  color: #fff;
-  transition: background 0.2s, color 0.2s;
+  background: #b6c47a;
+  color: #0a1a2f;
+  box-shadow: 0 2px 12px #0a1a2f22;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
 }
 
 .landing-hero__btn.secondary {
-  background: rgba(255,255,255,0.15);
-  border: 1.5px solid #fff;
-  color: #fff;
+  background: rgba(255,255,255,0.10);
+  border: 1.5px solid #b6c47a;
+  color: #e6e9f0;
 }
 
 .landing-hero__btn:hover {
-  background: #b6c47a;
-  color: #222;
+  background: #e6e9f0;
+  color: #2e4a62;
+  box-shadow: 0 4px 24px #b6c47a55;
 }

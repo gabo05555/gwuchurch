@@ -17,15 +17,14 @@
   align-items: center;
 }
 
-.navbar__logo-circle {
-  font-size: 2rem;
-  font-weight: bold;
-  border: 2px solid #fff;
-  border-radius: 50%;
-  padding: 0.25em 0.5em;
-  color: #fff;
-  background: rgba(0,0,0,0.3);
-  letter-spacing: 0.05em;
+
+.navbar__logo-img {
+  height: 48px;
+  width: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+  background: #fff;
+  padding: 2px 8px;
 }
 
 .navbar__menu {

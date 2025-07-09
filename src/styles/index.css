@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* Moved from src/index.css */
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
