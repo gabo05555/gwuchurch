@@ -1,6 +1,8 @@
+
 import './styles/App.css';
 import Navbar from './Navbar';
 import './styles/LandingHero.css';
+import bibleImg from './assets/bible.jpg';
 
 function App() {
   return (
@@ -9,8 +11,8 @@ function App() {
       <section className="landing-hero">
         <img
           className="landing-hero__bg"
-          src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=80"
-          alt="Church landing background"
+          src={bibleImg}
+          alt="Bible background"
         />
         <div className="landing-hero__overlay" />
         <div className="landing-hero__content">

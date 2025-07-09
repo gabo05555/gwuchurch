@@ -1,9 +1,24 @@
 import './styles/Navbar.css';
 import gwuLogo from './assets/gwuLogo.jpg';
+import { useEffect, useRef } from 'react';
 
 export default function Navbar() {
+  const navRef = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 30) {
+        navRef.current?.classList.add('scrolled');
+      } else {
+        navRef.current?.classList.remove('scrolled');
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <nav className="navbar">
+    <nav className="navbar" ref={navRef}>
       <div className="navbar__logo">
         <img src={gwuLogo} alt="GWU Logo" className="navbar__logo-img" />
       </div>
