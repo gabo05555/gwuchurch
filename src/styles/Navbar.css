@@ -29,15 +29,22 @@
 
 
 .navbar__logo-img {
-  height: 40px;
-  width: auto;
-  max-width: 160px;
-  border-radius: 0;
-  box-shadow: none;
-  background: transparent;
-  padding: 0;
+  height: 64px;
+  width: 64px;
+  max-width: 64px;
+  max-height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+  border: 2.5px solid #b6c47a;
+  padding: 4px;
   display: block;
-  object-fit: contain;
+  transition: box-shadow 0.2s, border 0.2s;
+}
+.navbar__logo-img:hover {
+  box-shadow: 0 4px 24px #b6c47a55;
+  border-color: #fff;
 }
 
 .navbar__menu {
