@@ -5,17 +5,7 @@ import { useEffect, useRef } from 'react';
 export default function Navbar() {
   const navRef = useRef(null);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 30) {
-        navRef.current?.classList.add('scrolled');
-      } else {
-        navRef.current?.classList.remove('scrolled');
-      }
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  // Removed scroll animation effect
 
   return (
     <nav className="navbar" ref={navRef}>
